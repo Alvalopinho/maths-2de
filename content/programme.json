@@ -1,0 +1,106 @@
+{
+  "source": {
+    "texte": "Arrêté du 26 février 2026, BO n° 14 du 2 avril 2026",
+    "url": "https://www.education.gouv.fr/bo/2026/Hebdo14/MENE2602914A",
+    "application": "Rentrée 2026-2027"
+  },
+  "parties": [
+    {
+      "id": "nombres",
+      "num": 1,
+      "titre": "Nombres, calcul et algèbre",
+      "notions": [
+        { "k": "n1", "texte": "Les ensembles ℕ, ℤ, 𝔻, ℚ, ℝ et la droite numérique" },
+        { "k": "n2", "texte": "Intervalles, et la valeur absolue comme distance : |x − a| ⩽ r" },
+        { "k": "n3", "texte": "Puissances, racines carrées, fractions irréductibles" },
+        { "k": "n4", "texte": "Multiples, diviseurs, nombres pairs et impairs" },
+        { "k": "n5", "texte": "Équations et inéquations du 1er degré, équation-produit, équation-quotient" },
+        { "k": "n6", "texte": "Les démos cultes : √2 est irrationnel, le carré d'un impair est impair" }
+      ]
+    },
+    {
+      "id": "geometrie",
+      "num": 2,
+      "titre": "Géométrie",
+      "notions": [
+        { "k": "g1", "texte": "Vecteurs : représentants, somme, produit par un réel, colinéarité" },
+        { "k": "g2", "texte": "Base orthonormée, coordonnées d'un vecteur, norme" },
+        { "k": "g3", "texte": "Déterminant de deux vecteurs — le test d'alignement express" },
+        { "k": "g4", "texte": "Distance entre deux points, milieu d'un segment" },
+        { "k": "g5", "texte": "Droites : vecteur directeur, équation cartésienne et réduite, pente" },
+        { "k": "g6", "texte": "Parallélisme, droites sécantes, point d'intersection" }
+      ]
+    },
+    {
+      "id": "fonctions",
+      "num": 3,
+      "titre": "Fonctions",
+      "notions": [
+        { "k": "f1", "texte": "Ensemble de définition et courbe d'équation y = f(x)" },
+        { "k": "f2", "texte": "Les fonctions de référence : valeur absolue, carré, inverse" },
+        { "k": "f3", "texte": "Signe d'une fonction, tableau de signes d'un produit ou d'un quotient" },
+        { "k": "f4", "texte": "Variations, tableau de variations, maximum et minimum" },
+        { "k": "f5", "texte": "Fonction affine : m = taux d'accroissement, p = ordonnée à l'origine" },
+        { "k": "f6", "texte": "Problèmes d'optimisation, résolution graphique ou algébrique" }
+      ]
+    },
+    {
+      "id": "stats",
+      "num": 4,
+      "titre": "Statistiques et probabilités",
+      "notions": [
+        { "k": "s1", "texte": "Pourcentages de pourcentages, évolutions successives et réciproques" },
+        { "k": "s2", "texte": "Moyenne, médiane, quartiles — et l'écart type, nouveau venu" },
+        { "k": "s3", "texte": "Séries regroupées en classes, histogrammes, classe médiane" },
+        { "k": "s4", "texte": "Tableaux croisés, fréquences conditionnelles et marginales" },
+        { "k": "s5", "texte": "Loi des grands nombres, observée par simulation Python" },
+        { "k": "s6", "texte": "Probabilités conditionnelles et arbres pondérés" }
+      ]
+    }
+  ],
+  "filsRouges": [
+    {
+      "titre": "Ensembles et logique",
+      "texte": "Les symboles ∈, ⊂, ∩, ∪, Ø. Les connecteurs « et » / « ou », la négation, le contre-exemple. Implication, équivalence, réciproque, contraposée. Et deux façons de raisonner : par disjonction de cas, et par l'absurde.",
+      "tag": "Bonne nouvelle : ∀ et ∃ sont explicitement hors programme.",
+      "ton": "violet"
+    },
+    {
+      "titre": "Algorithmique & Python",
+      "texte": "Variables (entier, flottant, booléen, chaîne), affectation, instruction conditionnelle, boucles for et while, écriture de fonctions.",
+      "tag": "Dont une fonction qui tire un nombre au hasard, pour simuler une expérience aléatoire.",
+      "ton": "corail"
+    },
+    {
+      "titre": "Automatismes",
+      "texte": "Calcul mental et littéral, fractions, puissances, proportions, lecture de graphiques, Pythagore, Thalès, trigo du triangle rectangle, moyenne et médiane.",
+      "tag": "Ce sont des acquis du collège : pas de chapitre de révisions prévu.",
+      "ton": "violet"
+    }
+  ],
+  "changements": [
+    { "titre": "Les probas conditionnelles descendent d'un cran", "texte": "Arbres pondérés, notation P_A(B), faux positifs et faux négatifs : c'était du programme de terminale." },
+    { "titre": "La valeur absolue rejoint le club", "texte": "Elle devient fonction de référence à côté de carré et inverse : définition, courbe, signe et variations." },
+    { "titre": "Les stats passent au niveau supérieur", "texte": "Écart type, séries regroupées en classes, histogrammes, polygone des fréquences cumulées, tableaux croisés." },
+    { "titre": "Le déterminant arrive avec les vecteurs", "texte": "Un calcul express pour savoir si deux vecteurs sont colinéaires — donc si trois points sont alignés." },
+    { "titre": "Les automatismes, en rituel", "texte": "« Questions flash » régulières, souvent sans calculatrice : calcul mental, calcul littéral, lecture de graphiques." },
+    { "titre": "Et ce qui sort", "texte": "Les nombres premiers quittent la partie arithmétique, qui ne garde que multiples, diviseurs, pair/impair et fractions irréductibles.", "ton": "lime" }
+  ],
+  "intox": [
+    { "rumeur": "L'échantillonnage a été supprimé.", "verdict": "FAUX", "reponse": "Le texte annonce noir sur blanc l'objectif d'introduire la fluctuation d'échantillonnage, en lien avec la partie Algorithmique et programmation." },
+    { "rumeur": "Racine carrée et cube ont disparu.", "verdict": "FAUX", "reponse": "Elles ne sont plus fonctions de référence à part entière, mais figurent toujours dans une capacité attendue sur les équations et inéquations." },
+    { "rumeur": "Les nombres premiers sont sortis.", "verdict": "VRAI", "reponse": "Exact. L'arithmétique ne parle plus que de multiples, diviseurs, nombres pairs et impairs, et de fractions sous forme irréductible." }
+  ],
+  "competences": [
+    { "nom": "Chercher", "glose": "Expérimenter, essayer des pistes, se tromper utilement" },
+    { "nom": "Modéliser", "glose": "Traduire une situation réelle, valider ou casser un modèle" },
+    { "nom": "Représenter", "glose": "Changer de cadre : graphique, algébrique, géométrique" },
+    { "nom": "Raisonner", "glose": "Démontrer, assumer des résultats partiels" },
+    { "nom": "Calculer", "glose": "Appliquer des techniques, dérouler un algorithme" },
+    { "nom": "Communiquer", "glose": "Expliquer sa démarche, à l'écrit comme à l'oral" }
+  ],
+  "reserves": [
+    "L'horaire hebdomadaire de maths n'est pas fixé par ce texte : il vient de la grille horaire du lycée, non vérifiée ici.",
+    "La série technologique STHR a son propre programme de maths, qui n'a pas été vérifié pour cette page."
+  ]
+}

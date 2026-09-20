@@ -1,0 +1,61 @@
+[
+  {
+    "id": "intervalles-valeur-absolue",
+    "ordre": 10,
+    "partie": "nombres",
+    "titre": "Intervalles et valeur absolue",
+    "maj": "2026-09-20",
+    "idee": "|x − a| n'est pas un calcul mystérieux : c'est la distance entre x et a sur la droite numérique. Donc « |x − a| ⩽ r » se lit « x est à une distance d'au plus r de a » — c'est exactement l'intervalle [a − r, a + r].",
+    "methode": [
+      "Repère le centre a et le rayon r dans l'écriture |x − a| ⩽ r.",
+      "Traduis directement en intervalle : [a − r, a + r]. Le centre au milieu, le rayon de chaque côté.",
+      "Dans l'autre sens, pour passer de [m, M] à une valeur absolue : le centre est a = (m + M)/2, le rayon est r = (M − m)/2.",
+      "Vérifie toujours en testant une valeur : elle doit être dans l'intervalle ET vérifier l'inégalité."
+    ],
+    "erreur": "Écrire |x − 3| ⩽ 2 ⟺ x − 3 ⩽ 2. C'est faux : on oublie la branche négative. Une valeur absolue encadre des deux côtés — il faut −2 ⩽ x − 3 ⩽ 2, donc 1 ⩽ x ⩽ 5.",
+    "exercice": {
+      "enonce": "Écris l'ensemble des réels situés à une distance d'au plus 0,5 de 4, d'abord sous forme d'intervalle, puis avec une valeur absolue.",
+      "corrige": "Centre a = 4, rayon r = 0,5. L'intervalle est [3,5 ; 4,5]. Avec une valeur absolue : |x − 4| ⩽ 0,5. Vérification avec x = 4,4 : c'est bien dans [3,5 ; 4,5], et |4,4 − 4| = 0,4 ⩽ 0,5."
+    }
+  },
+  {
+    "id": "colinearite-determinant",
+    "ordre": 20,
+    "partie": "geometrie",
+    "titre": "Colinéarité et déterminant",
+    "maj": "2026-09-20",
+    "idee": "Deux vecteurs sont colinéaires quand ils vont dans la même direction (l'un est un multiple de l'autre). Le déterminant est le test rapide : pour u(x ; y) et v(x' ; y'), on calcule xy' − yx'. Si ça fait 0, ils sont colinéaires. C'est une nouveauté du programme 2026.",
+    "methode": [
+      "Calcule les coordonnées des vecteurs : pour AB, c'est (x_B − x_A ; y_B − y_A). Toujours l'arrivée moins le départ.",
+      "Pose le déterminant en croisant : det = x × y' − y × x'.",
+      "Si det = 0 → vecteurs colinéaires. Selon la question : les points sont alignés, ou les droites sont parallèles.",
+      "Si det ≠ 0 → pas colinéaires. Les droites sont sécantes."
+    ],
+    "erreur": "Calculer xx' − yy' au lieu de xy' − yx'. Le déterminant croise les coordonnées : le x du premier avec le y du second. Retiens le mot « croiser », c'est tout le piège.",
+    "exercice": {
+      "enonce": "Dans un repère, A(1 ; 2), B(4 ; 8) et C(−1 ; −2). Ces trois points sont-ils alignés ?",
+      "corrige": "Vecteur AB = (4 − 1 ; 8 − 2) = (3 ; 6). Vecteur AC = (−1 − 1 ; −2 − 2) = (−2 ; −4). Déterminant : 3 × (−4) − 6 × (−2) = −12 + 12 = 0. Le déterminant est nul, donc AB et AC sont colinéaires : les points A, B et C sont alignés."
+    }
+  },
+  {
+    "id": "tableau-de-signes",
+    "ordre": 30,
+    "partie": "fonctions",
+    "titre": "Tableau de signes d'un produit",
+    "maj": "2026-09-20",
+    "idee": "Un produit est positif quand ses facteurs sont d'accord (deux positifs, ou deux négatifs) et négatif quand ils sont en désaccord. Plutôt que de tester des valeurs au hasard, on range tout dans un tableau : une ligne par facteur, une ligne pour le produit, et la règle des signes fait le travail.",
+    "methode": [
+      "Factorise d'abord. Un tableau de signes se lit sur un produit, jamais sur une somme : tant qu'il reste un « + » entre deux termes, il n'y a rien à remplir.",
+      "Cherche la valeur qui annule chaque facteur : pour ax + b, c'est x = −b/a. Ce sont les frontières des colonnes.",
+      "Range ces valeurs dans l'ordre croissant sur la ligne du haut, entre −∞ et +∞.",
+      "Remplis une ligne par facteur. Pour ax + b, le signe de a s'installe après la racine, et le signe opposé avant : avec a > 0, c'est − puis +.",
+      "Multiplie colonne par colonne pour obtenir la ligne du produit : deux signes identiques donnent +, deux signes différents donnent −.",
+      "Conclus en lisant les colonnes qui répondent à la question. Si le facteur est au dénominateur, sa racine est une valeur interdite : double barre dans le tableau, et crochet ouvert dans la solution."
+    ],
+    "erreur": "Dresser le tableau sans avoir factorisé. Sur x² − 4 ⩽ 0, remplir une ligne « x² − 4 » ne mène nulle part : il faut passer par (x − 2)(x + 2), puis une ligne par facteur. L'autre classique est d'additionner les signes au lieu de les multiplier — (−) et (−) donnent bien +, pas −.",
+    "exercice": {
+      "enonce": "Résous l'inéquation (2x − 6)(x + 1) ⩾ 0.",
+      "corrige": "Racines : 2x − 6 = 0 donne x = 3, et x + 1 = 0 donne x = −1. On range donc −1 puis 3. Ligne 2x − 6 (coefficient 2 > 0) : − avant 3, + après. Ligne x + 1 (coefficient 1 > 0) : − avant −1, + après. Ligne produit : sur ]−∞ ; −1], (−) × (−) = + ; sur [−1 ; 3], (−) × (+) = − ; sur [3 ; +∞[, (+) × (+) = +. On cherche « ⩾ 0 », donc S = ]−∞ ; −1] ∪ [3 ; +∞[. Les crochets sont fermés en −1 et en 3 parce que l'énoncé accepte la valeur 0. Vérification avec x = 0 : (−6) × 1 = −6, bien négatif, et 0 n'est pas dans S."
+    }
+  }
+]
