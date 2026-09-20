@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Histoire — Ma seconde</title>
+<meta name="description" content="Le programme d'histoire de seconde et des fiches de chapitre.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,800;0,9..144,900;1,9..144,800&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html">
+      <span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5-9-5z"/><path d="M3 14l9 5 9-5"/></svg></span>
+      Ma seconde
+    </a>
+    <nav class="nav-links">
+      <a href="#chapitres">Mes chapitres</a>
+      <a href="#blocages">Mes blocages</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:.7rem">
+      <div class="mat-switch">
+        <a href="maths.html">Maths</a>
+        <a href="histoire.html" aria-current="page">Histoire</a>
+      </div>
+      <button class="theme-btn" id="theme" aria-label="Changer de thème clair ou sombre">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+          Tronc commun · année de seconde
+        </span>
+        <h1>Ton histoire de 2<sup style="font-size:.45em">de</sup>, <span class="hl">chapitre par chapitre.</span></h1>
+        <p class="lede" id="intitule">Grandes étapes de la formation du monde moderne</p>
+        <p class="lede">Chaque fiche suit la même forme : la problématique, les repères, ce qui fait débat, la phrase à retenir. Et le même bouton pour dire quand tu bloques.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#chapitres">Voir mes chapitres</a>
+          <a class="btn btn-ghost" href="maths.html">Passer aux maths</a>
+        </div>
+        <p class="src-note" id="srcNote"></p>
+      </div>
+      <div class="hero-card">
+        <p class="eyebrow">Le découpage en question</p>
+        <svg viewBox="0 0 340 120" style="width:100%;height:auto;margin:1.1rem 0" role="img" aria-label="Frise des quatre grandes périodes">
+          <line x1="14" y1="74" x2="326" y2="74" stroke="var(--line)" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="60" cy="74" r="7" fill="var(--violet)"/>
+          <circle cx="150" cy="74" r="7" fill="var(--violet)"/>
+          <circle cx="240" cy="74" r="7" fill="var(--coral)"/>
+          <text x="60" y="56" text-anchor="middle" font-family="Fraunces,serif" font-size="16" font-weight="900" fill="var(--fg)">476</text>
+          <text x="150" y="56" text-anchor="middle" font-family="Fraunces,serif" font-size="16" font-weight="900" fill="var(--fg)">1492</text>
+          <text x="240" y="56" text-anchor="middle" font-family="Fraunces,serif" font-size="16" font-weight="900" fill="var(--fg)">1789</text>
+          <text x="22" y="98" font-family="Space Grotesk,sans-serif" font-size="11" fill="var(--muted)">Antiquité</text>
+          <text x="98" y="98" font-family="Space Grotesk,sans-serif" font-size="11" fill="var(--muted)">Moyen Âge</text>
+          <text x="180" y="98" font-family="Space Grotesk,sans-serif" font-size="11" fill="var(--muted)">moderne</text>
+          <text x="258" y="98" font-family="Space Grotesk,sans-serif" font-size="11" fill="var(--muted)">contemp.</text>
+        </svg>
+        <p style="color:var(--muted);font-size:.96rem">Ces trois dates sont des <strong style="color:var(--fg)">choix</strong>, pas des faits. Le premier chapitre de l'année consiste à comprendre qui les a posées, et pourquoi elles se discutent.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap reveal" id="chapitres">
+    <div class="head">
+      <p class="eyebrow">Mes chapitres</p>
+      <h2>Le programme, décortiqué</h2>
+      <p class="lede">De nouveaux chapitres s'ajoutent au fil de l'année. Marque « compris » ce que tu maîtrises.</p>
+    </div>
+    <div class="fiches" id="histoireList"><div class="f-empty">Chargement…</div></div>
+  </section>
+
+  <section class="sec" id="blocages" style="background:var(--bg-2)">
+    <div class="wrap reveal">
+      <div class="head">
+        <p class="eyebrow">Mes blocages</p>
+        <h2>Ce sur quoi je coince</h2>
+        <p class="lede">Ces notes restent sur cet appareil : rien n'est envoyé nulle part. Quand tu veux en parler, appuie sur « Envoyer » — ton téléphone te proposera par quel moyen.</p>
+      </div>
+      <div class="grid g2" id="bList"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span style="font-family:Fraunces,serif;font-weight:900;color:#fff;font-size:1.1rem">Ma seconde</span>
+    <span style="font-size:.9rem;line-height:1.5">Page de révision personnelle, sans valeur officielle.<br>Seuls les textes du Bulletin officiel font foi.</span>
+  </div>
+</footer>
+
+<script src="assets/common.js"></script>
+<script src="assets/histoire.js"></script>
+</body>
+</html>

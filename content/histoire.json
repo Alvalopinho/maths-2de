@@ -1,0 +1,58 @@
+{
+  "matiere": "Histoire",
+  "intitule": "Grandes étapes de la formation du monde moderne",
+  "horaire": "48 h, en tronc commun partagé avec la géographie",
+  "source": {
+    "texte": "BO spécial n° 1 du 22 janvier 2019 — toujours en vigueur pour la seconde GT à la rentrée 2026"
+  },
+  "fiches": [
+    {
+      "id": "histoire-periodisation",
+      "ordre": 10,
+      "theme": "Introduction",
+      "titre": "La périodisation",
+      "duree": "2 h",
+      "maj": "2026-09-20",
+      "problematique": "Pourquoi découpe-t-on le passé en périodes, qui décide des bornes, et que révèlent ces choix ?",
+      "reperes": {
+        "titre": "Les quatre grandes périodes et leurs dates-repères",
+        "colonnes": ["Période", "Borne d'entrée", "Ce que la date marque"],
+        "lignes": [
+          ["Antiquité", "invention de l'écriture", "—"],
+          ["Moyen Âge", "476", "Déposition du dernier empereur romain d'Occident, Romulus Augustule"],
+          ["Époque moderne", "1453 ou 1492", "Prise de Constantinople par les Ottomans / arrivée de Colomb aux Amériques"],
+          ["Époque contemporaine", "1789", "Révolution française"]
+        ],
+        "note": "Avant l'écriture : la Préhistoire (parfois la Protohistoire en transition), hors du découpage « historique » proprement dit."
+      },
+      "blocs": [
+        {
+          "titre": "Une construction, pas une évidence",
+          "points": [
+            "Le découpage en trois âges (Antiquité / Moyen Âge / Temps modernes) naît chez les humanistes italiens du XVᵉ siècle — Flavio Biondo, Leonardo Bruni — qui inventent le « Moyen Âge » comme un entre-deux méprisable entre l'âge d'or antique et leur propre « renaissance ».",
+            "Il est fixé et diffusé par l'érudit allemand Christoph Cellarius (Keller), dont l'Historia Universalis (1685) divise l'histoire en antiqua / medii aevi / nova. C'est de là que vient le découpage scolaire.",
+            "La quatrième période, « contemporaine », est spécifiquement française : elle s'impose dans l'enseignement avec Victor Duruy (1867), ministre sous le Second Empire, et démarre en 1789."
+          ]
+        },
+        {
+          "titre": "Pourquoi ces bornes sont discutables",
+          "ton": "coral",
+          "points": [
+            "Elles sont eurocentrées. 476 ou 1789 ne veulent rien dire pour la Chine, l'Inde ou l'Afrique subsaharienne. Le monde ne change pas de période parce que l'Europe change.",
+            "Ce sont des événements ponctuels plaqués sur des mutations lentes. En 476, personne n'a le sentiment que « l'Antiquité s'arrête » : l'Empire d'Orient continue mille ans de plus.",
+            "Le choix de la date oriente le sens. 1453 met en avant la rupture ottomane et la fin de Byzance ; 1492 met en avant l'ouverture atlantique. Deux dates, deux récits.",
+            "Les historiens eux-mêmes contestent le découpage. Jacques Le Goff, dans Faut-il vraiment découper l'histoire en tranches ? (Seuil, 2014, son dernier livre), défend un « long Moyen Âge » qui court jusqu'au milieu du XVIIIᵉ siècle et refuse de voir dans la Renaissance une période à part entière."
+          ]
+        },
+        {
+          "titre": "Il existe d'autres façons de périodiser",
+          "points": [
+            "Dynasties, ères, époques, âges, siècles — le programme demande d'en montrer la pluralité, sans en faire l'inventaire."
+          ]
+        }
+      ],
+      "retenir": "Le temps lui-même a une histoire : la périodisation n'est pas un fait mais un outil, construit par des historiens situés dans leur époque, et donc révisable.",
+      "activite": "Construire une frise chronologique, enrichie toute l'année (possible en numérique)."
+    }
+  ]
+}
